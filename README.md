@@ -1,51 +1,42 @@
-# Vue Storefront 2
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/20775532/150862136-957314b1-5086-4f03-8a34-04d402ae2a11.png" alt="Vue Storefront" height="80px" />
+</div>
 
-## Build Setup
+## Vue Storefront 2 integration with PrestaShop
 
-```bash
-# install dependencies
-$ yarn install
+This integration is being maintained by [Binshops](https://www.binshops.com).
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+------
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-```
+### Requirements:
+- NodeJS v14 or later
 
-For detailed explanation on how things work, check out the [documentation](https://docs.vuestorefront.io/v2/).
+### Steps
+1. Download and Install [PrestaShop REST API](https://www.binshops.com/prestashop-api)
+2. Clone the integration repository
+3. Run `yarn` to install dependencies
+4. Change the API url to your shop in this file: `packages/theme/middleware.config.js`
+5. Run these commands to build `yarn build` and run `yarn dev` your project.
 
-## Special Directories
+## How to start if you want to contribute?
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+Want to contribute? Ping us on `prestashop` channel on [our Discord](https://discord.vuestorefront.io)!
 
-### `assets`
+## Resources
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+- [Vue Storeftont Tutorial](https://www.binshops.com/tutorial/vue-storefront-tutorial) If you are new to Vue Storefront, you can check this tutorial.
+- [Vue Storefront Documentation](https://docs.vuestorefront.io/v2/)
+- [PrestaShop integration Documentation](https://docs.vuestorefront.io/prestashop)
+- [Community Chat](https://discord.vuestorefront.io)
 
-### `components`
+## Support
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+If you have any questions about this integration we will be happy to answer them on `prestashop` channel on [our Discord](discord.vuestorefront.io).
 
-### `layouts`
+## Contributors ✨
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
-### `pages`
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
