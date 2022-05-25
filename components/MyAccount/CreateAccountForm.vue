@@ -58,14 +58,14 @@
           rules="required|min:2"
           class="form__element"
         >
-        <SfInput
-          v-model="currentPassword"
-          type="password"
-          name="currentPassword"
-          label="Current Password"
-          required
-          class="form__element"
-        />
+          <SfInput
+            v-model="newPassword"
+            type="password"
+            name="newPassword"
+            label="Password"
+            required
+            class="form__element"
+          />
         </ValidationProvider>
       </div>
       <SfButton
@@ -110,7 +110,7 @@ export default defineComponent({
   setup(props, context) {
     const emit = context.emit;
     const { $router } = context.root;
-    const currentPassword = ref('');
+    const newPassword = ref('');
     const genderOptions = [
       { value: 1, label: 'male' },
       { value: 2, label: 'female' }
@@ -128,7 +128,7 @@ export default defineComponent({
     const submitForm = (resetValidationFn) => () => {
       const onComplete = () => {
         form.value = resetForm();
-        currentPassword.value = '';
+        newPassword.value = '';
         $router.push(context.root.localePath({ name: 'shipping' }));
         resetValidationFn();
       };
@@ -142,13 +142,13 @@ export default defineComponent({
           title: 'User Account Update'
         });
       };
-      if (currentPassword.value) {
-        form.value.password = currentPassword.value;
+      if (newPassword.value) {
+        form.value.password = newPassword.value;
       }
       emit('submit', { form, onComplete, onError });
     };
     return {
-      currentPassword,
+      newPassword,
       form,
       submitForm,
       genderOptions
