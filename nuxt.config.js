@@ -62,15 +62,12 @@ export default {
       }
     }],
     // @core-development-only-start
-    ['@vue-storefront/nuxt-theme', {
-      generate: {
-        replace: {
-          apiClient: '@vue-storefront/prestashop-api',
-          composables: '@vue-storefront/prestashop'
-        }
-      },
-      routes: false
-    }],
+    [
+      '@vue-storefront/nuxt-theme',
+      {
+        routes: false
+      }
+    ],
     // @core-development-only-end
     /* project-only-start
     ['@vue-storefront/nuxt-theme'],
