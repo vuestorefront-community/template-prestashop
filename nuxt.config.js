@@ -27,10 +27,6 @@ export default {
         rel: 'preconnect',
         href: 'https://fonts.gstatic.com',
         crossorigin: 'crossorigin'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700|Roboto:300,300i,400,400i,500,700&display=swap'
       }
     ]
   },
@@ -178,15 +174,17 @@ export default {
   },
   googleFonts: {
     families: {
-      Raleway: {
-        wght: [300, 400, 500, 600, 700],
-        ital: [400]
+      Roboto: true,
+      Montserrat: {
+        wght: [100, 200, 300, 400, 500, 600, 700, 800, 900]
       },
-      Roboto: {
-        wght: [300, 400, 500, 700],
-        ital: [300, 400]
+      Lato: {
+        wght: [100, 300, 400, 700, 900]
+      },
+      Raleway: {
+        wght: [100, 200, 300, 400, 500, 600, 700, 800, 900]
       }
     },
-    display: 'swap'
-  }
+    download: false,
+  },
 };
